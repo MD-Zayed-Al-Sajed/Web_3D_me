@@ -23,10 +23,17 @@ export default class Zayed {
         this.time.on("update", () => {
             this.update();
         })
+        this.sizes.on("resize", () => {
+            this.resize();
+        })
     }
 
     update() {
         this.camera.update();
         this.renderer.update();
+    }
+    resize() {
+        this.camera.resize();
+        this.renderer.resize();
     }
 }
