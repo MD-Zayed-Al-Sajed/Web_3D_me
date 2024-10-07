@@ -1,0 +1,19 @@
+import * as THREE from 'three';
+import Zayed from "../Zayed.js";
+
+export default class Renderer {
+    constructor() {
+        this.sajed_r = new Zayed();
+        this.sizes_r = this.sajed_r.sizes;
+        this.scene_r = this.sajed_r.scene;
+        this.canvas_r = this.sajed_r.canvas;
+        this.camera_r = this.sajed_r.camera;
+
+        // console.log(this.camera_r, this.camera_r.perspectiveCamera);
+
+        this.setRenderer();
+    }
+
+    resize() {}
+    update() {}
+}

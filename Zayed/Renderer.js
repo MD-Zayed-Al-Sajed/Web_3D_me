@@ -9,7 +9,7 @@ export default class Renderer {
         this.canvas_r = this.sajed_r.canvas;
         this.camera_r = this.sajed_r.camera;
 
-        console.log(this.camera_r, this.camera_r.perspectiveCamera);
+        // console.log(this.camera_r, this.camera_r.perspectiveCamera);
 
         this.setRenderer();
     }
